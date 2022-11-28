@@ -31,11 +31,16 @@ public class oldStyle {
 
     Select select =new Select(dropdown);
 
-    select.selectByValue("2");
-        System.out.println("by value::" + select.getFirstSelectedOption().getText());
+  //  select.selectByValue("2");
+     //   System.out.println("by value::" + select.getFirstSelectedOption().getText());
 
-        select.selectByVisibleText("Option 1");
-        System.out.println("by visible text::" + select.getFirstSelectedOption().getText());
+      //  select.selectByVisibleText("Option 1");
+       // System.out.println("by visible text::" + select.getFirstSelectedOption().getText());
+
+        select.selectByIndex(0);
+        System.out.println("By index::::"+ select.getFirstSelectedOption().getText());
+
+        System.out.println(select.isMultiple());
 
     }
     }
