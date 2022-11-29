@@ -42,10 +42,8 @@ public class RadioBtnCheckbox {
                 WebElement checkBox = driver.findElement(By.xpath("//input[@type='checkbox' and following-sibling::text()='checkbox 1']"));
         checkBox.click();
         System.out.println(checkBox.isSelected());
-        System.out.println("Deselecting");
-        checkBox.click();
-        System.out.println(checkBox.isSelected());
         Assert.assertTrue(checkBox.isSelected());
+        checkBox.click();
 
     }
 }
